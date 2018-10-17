@@ -12,7 +12,6 @@
   <header></header>
   <main class="main">
     <div class="wrapper">
-      <div class="background-image-opacity"></div>
       <section class="info slides slide-active">
         <div class="column-left">
           <div class="info__tags">
@@ -43,7 +42,7 @@
           <div class="form">
             <div class="form__header">
               <span class="form__header-title">Filters</span>
-              <button class="form__header-button" type="button" class="form__basker">Clear all</span>
+              <button class="form__header-button" type="button">Clear all</button>
             </div>
             <form>
               <div class="form__container">
@@ -95,9 +94,16 @@
                     <input class="form__price-input" type="number" min="200" max="400" step="10">
                   </div>
                 </div>
-                <div class="form__custom-range">
-                  <span class="form__custom-min-price">&#36;45</span>
-                  <span class="form__custom-min-price">&#36;250</span>
+                <div class="form__range-wrapper">
+                  <span class="form__range-min-price range-price">&#36;45</span>
+                  <span class="form__range-max-price range-price">&#36;250</span>
+                  <div class="form__range custom-range">
+                    <div class="custom-range__scale">
+                      <div class="custom-range__bar"></div>
+                      <div class="custom-range__toggle toggle-min"></div>
+                      <div class="custom-range__toggle toggle-max"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button class="form__button button" type="submit"><span class="button__icon">Find</span></button>
@@ -105,15 +111,15 @@
           </div>
         </div>
       </section>
-      <div class="slider">
-        <button class="slider__button-prev"><span class="visually-hidden">Назад</span></button>
-        <div class="slider__buttons">
-          <button class="slider__button-slide-number active-slide-button"><span class="visually-hidden">Первый слайд</span></button>
-          <button class="slider__button-slide-number"><span class="visually-hidden">Второй слайд</span></button>
-          <button class="slider__button-slide-number"><span class="visually-hidden">Третий слайд</span></button>
-          <button class="slider__button-slide-number"><span class="visually-hidden">Четвертый слайд</span></button>
+      <div class="slider-paginator">
+        <button class="slider-paginator__button-prev"><span class="visually-hidden">Назад</span></button>
+        <div class="slider-paginator__buttons">
+          <button class="slider-paginator__button-slide-number active-slide-button"><span class="visually-hidden">Первый слайд</span></button>
+          <button class="slider-paginator__button-slide-number"><span class="visually-hidden">Второй слайд</span></button>
+          <button class="slider-paginator__button-slide-number"><span class="visually-hidden">Третий слайд</span></button>
+          <button class="slider-paginator__button-slide-number"><span class="visually-hidden">Четвертый слайд</span></button>
         </div>
-        <button class="slider__button-next"><span class="visually-hidden">Назад</span></button>
+        <button class="slider-paginator__button-next"><span class="visually-hidden">Назад</span></button>
       </div>
     </div>
   </main>
