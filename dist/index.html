@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<!-- Шрифты "Myriad" и "Lato" не использовались, по сколько по ТЗ требовалось использовать шрифт "Arial".
+    так же могу реализовать слайдер как в этом примере: https://github.com/VildanovDenis/829567-device ,
+    т.е. смена слайда по клику на одну из 4 кнопок(не по кнопкам вперед/назад. С ними придется повозится.) -->
+<body>
+  <header></header>
+  <main class="main">
+    <div class="wrapper">
+      <section class="info slides slide-active">
+        <div class="column-left">
+          <div class="info__tags">
+            <span class="info__tag">Technology</span>
+            <span class="info__tag info__tag--blue">Startups</span>
+          </div>
+          <h2 class="info__title">The smartest clock that was ever made!</h2>
+          <p class="info__description">The Lord of the Rings is an epic high-fantasy novel written by English author J.
+            R. R. Tolkien. The story began as a sequel to Tolkien's work.</p>
+          <a class="info__link button" href="#">See the features</a>
+          <div class="info__stats-wrapper">
+            <div class="info__stats info__stats--1">
+              <span class="info__stats-numbers">$98,420</span>
+              <span class="info__stats-decription">Projected Revenue</span>
+            </div>
+            <div class="info__stats info__stats--2">
+              <span class="info__stats-numbers">325</span>
+              <span class="info__stats-decription">New users</span>
+            </div>
+            <div class="info__stats info__stats--3">
+              <span class="info__stats-numbers">3,567</span>
+              <span class="info__stats-decription">Products sold</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="column-right">
+          <div class="form">
+            <div class="form__header">
+              <span class="form__header-title">Filters</span>
+              <button class="form__header-button" type="button">Clear all</button>
+            </div>
+            <form>
+              <div class="form__container">
+                <span class="form__title">Brand:</span>
+                <ul class="form__list">
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="Sony" id="sony" checked>
+                    <label class="form__label-checkbox" for="sony">Sony</label>
+                  </li>
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="Apple" id="apple">
+                    <label class="form__label-checkbox" for="apple">Apple</label>
+                  </li>
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="Bose" id="bose" checked>
+                    <label class="form__label-checkbox" for="bose">Bose</label>
+                  </li>
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="Dell" id="dell" checked>
+                    <label class="form__label-checkbox" for="dell">Dell</label>
+                  </li>
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="LG" id="lg" checked>
+                    <label class="form__label-checkbox" for="lg">LG</label>
+                  </li>
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="Samsung" id="samsung">
+                    <label class="form__label-checkbox" for="samsung">Samsung</label>
+                  </li>
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="Huawei" id="huawei">
+                    <label class="form__label-checkbox" for="huawei">Huawei</label>
+                  </li>
+                  <li>
+                    <input class="form__brand-checkbox visually-hidden" type="checkbox" name="HP" id="hp">
+                    <label class="form__label-checkbox" for="hp">HP</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="form__container form__container--last">
+                <span class="form__title">Price range:</span>
+                <div class="container">
+                  <div class="form__column-left">
+                    <label class="form__price">From</label>
+                    <input class="form__price-input" type="number" min="0" max="200" step="10">
+                  </div>
+                  <div class="form__column-right">
+                    <label class="form__price">To</label>
+                    <input class="form__price-input" type="number" min="200" max="400" step="10">
+                  </div>
+                </div>
+                <div class="form__range-wrapper">
+                  <span class="form__range-min-price range-price">&#36;45</span>
+                  <span class="form__range-max-price range-price">&#36;250</span>
+                  <div class="form__range custom-range">
+                    <div class="custom-range__scale">
+                      <div class="custom-range__bar"></div>
+                      <div class="custom-range__toggle toggle-min"></div>
+                      <div class="custom-range__toggle toggle-max"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="form__button button" type="submit"><span class="button__icon">Find</span></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="slider-paginator">
+        <button class="slider-paginator__button-prev"><span class="visually-hidden">Назад</span></button>
+        <div class="slider-paginator__buttons">
+          <button class="slider-paginator__button-slide-number active-slide-button"><span class="visually-hidden">Первый слайд</span></button>
+          <button class="slider-paginator__button-slide-number"><span class="visually-hidden">Второй слайд</span></button>
+          <button class="slider-paginator__button-slide-number"><span class="visually-hidden">Третий слайд</span></button>
+          <button class="slider-paginator__button-slide-number"><span class="visually-hidden">Четвертый слайд</span></button>
+        </div>
+        <button class="slider-paginator__button-next"><span class="visually-hidden">Назад</span></button>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
