@@ -114,7 +114,7 @@ input[type="radio"].visually-hidden {
   width: 168px;
   padding-right: 35px;
   margin-bottom: 57px;
-  border: 1px solid #0f70a7;
+  border: 1px solid #0b3953;
   font-size: 14px;
   font-weight: 400;
   line-height: 40px;
@@ -125,11 +125,11 @@ input[type="radio"].visually-hidden {
 .info__link::before {
   content: "";
   position: absolute;
+  background-image: url("../img/spritesheet.png");
   top: 14px;
   left: 140px;
   width: 8px;
   height: 12px;
-  background-image: url("../img/spritesheet.png");
   background-position: -24px -4px; }
 
 .info__stats-wrapper {
@@ -165,11 +165,11 @@ input[type="radio"].visually-hidden {
 .info__stats::before {
   content: "";
   position: absolute;
+  background-image: url("../img/spritesheet.png");
   top: 26px;
   left: 21px;
   width: 41px;
-  height: 41px;
-  background-image: url("../img/spritesheet.png"); }
+  height: 41px; }
 
 .info__stats--1:before {
   background-position: 246px -5px; }
@@ -237,17 +237,17 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   font-weight: 500;
   text-align: left;
-  color: #b4bfc7;
+  color: #c0c4cd;
   background-color: transparent; }
 
 .form__header-button::before {
   content: "";
   position: absolute;
+  background-image: url("../img/spritesheet.png");
   top: 17px;
   right: 17px;
   width: 11px;
   height: 12px;
-  background-image: url("../img/spritesheet.png");
   background-position: 267px -5px; }
 
 .form__container {
@@ -296,18 +296,18 @@ input[type="radio"].visually-hidden {
 .form__brand-checkbox:checked + .form__label-checkbox {
   position: relative;
   border: 1px solid #e8ebee;
-  color: #1c92d3;
+  color: #1d97da;
   -webkit-border-radius: 15px;
           border-radius: 15px; }
 
 .form__brand-checkbox:checked + .form__label-checkbox::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  background-image: url("../img/spritesheet.png");
   top: 11px;
   right: 9px;
   width: 7px;
   height: 7px;
-  background-image: url("../img/spritesheet.png");
   background-position: 12px -5px; }
 
 .container {
@@ -338,7 +338,7 @@ input[type="radio"].visually-hidden {
   font-size: 10px;
   font-weight: 400;
   line-height: 20px;
-  color: #c5c8d1; }
+  color: #a4a9b6; }
 
 .form__price-input {
   -webkit-box-sizing: border-box;
@@ -368,11 +368,11 @@ input[type="radio"].visually-hidden {
 
 .form__range-min-price {
   top: 11px;
-  left: 17px; }
+  left: 24px; }
 
 .form__range-max-price {
   top: 11px;
-  left: 138px; }
+  left: 140px; }
 
 .custom-range__scale {
   position: relative;
@@ -410,7 +410,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 144px;
   margin: 0 auto;
-  border: 1px solid #1aa722;
+  border: 1px solid #1fa427;
   color: white;
   background-color: #27cf31; }
 
@@ -419,13 +419,13 @@ input[type="radio"].visually-hidden {
   padding-left: 12px; }
 
 .button__icon::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  background-image: url("../img/spritesheet.png");
   top: 4px;
   right: 35px;
   width: 10px;
   height: 8px;
-  background-image: url("../img/spritesheet.png");
   background-position: 32px -5px; }
 
 .slider-paginator {
@@ -478,24 +478,24 @@ input[type="radio"].visually-hidden {
   border-left: 1px solid #ecf1f5; }
 
 .slider-paginator__button-prev::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  background-image: url("../img/spritesheet.png");
   top: 22px;
   right: 26px;
   width: 9px;
   height: 16px;
-  background-image: url("../img/spritesheet.png");
   background-position: 322px -5px; }
 
 .slider-paginator__button-next::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  background-image: url("../img/spritesheet.png");
   top: 22px;
   right: 26px;
   width: 9px;
   height: 16px;
-  background-image: url("../img/spritesheet.png");
   background-position: 286px -5px; }
 
 .active-slide-button {
-  background-color: #1d96da; }
+  background-color: #1d97da; }
