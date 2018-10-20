@@ -41,15 +41,16 @@ next.addEventListener("click", function(evt) {
 prev.addEventListener("click", function(evt) {
   evt.preventDefault();
   
-  var i;
   var prevPosition = parseInt(carousel.style.transform.slice(11)) || 0;
 
   if (prevPosition != 0) {
     carousel.style.transform = "TranslateX("+ (prevPosition + slideTranslate) +"px)";
     buttonsList[current].classList.remove("active-slide-button");
     buttonsList[current-1].classList.add("active-slide-button");
+    current--
   } else {}
-  return current--
+  console.log(current);
+  return current
 })
 
 
@@ -58,7 +59,6 @@ prev.addEventListener("click", function(evt) {
 
 firstButton.addEventListener("click", function(evt) {
   evt.preventDefault();
-  console.log("123");
 
   var oldButton = sliderButtons.querySelector(".active-slide-button");
   oldButton.classList.remove("active-slide-button");
