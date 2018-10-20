@@ -16,14 +16,12 @@ var fourthButton = sliderButtons.querySelector(".fourth-slide");
 // Карусель
 
 
-// Вперед
 next.addEventListener("click", function(evt) {
   evt.preventDefault();
 
   var prevPosition = parseInt(carousel.style.transform.slice(11)) || 0;
   var oldButton = paginator.querySelector(".active-slide-button");
   var newButton = paginator.querySelector(".active-slide-button + .slider-paginator__button-slide-number");
-
   if (prevPosition != (-(slideTranslate * numberOfSlides))) {
     carousel.style.transform = "TranslateX("+ (prevPosition - slideTranslate) +"px)";
     oldButton.classList.remove("active-slide-button");
@@ -31,13 +29,11 @@ next.addEventListener("click", function(evt) {
   } else {}
 })
 
-// Назад
 prev.addEventListener("click", function(evt) {
   evt.preventDefault();
 
   var prevPosition = parseInt(carousel.style.transform.slice(11)) || 0;
-  var buttonsList = ...sliderButtons.children;
-
+  var childList = sliderButtons.children;
   if (prevPosition != 0) {
     carousel.style.transform = "TranslateX("+ (prevPosition + slideTranslate) +"px)";
     oldButton.classList.remove("active-slide-button");

@@ -4,7 +4,9 @@ var gulp      = require('gulp'),
     cssnano     = require('gulp-cssnano'),
     rename      = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer'),
-    del         = require('del');
+    del         = require('del'),
+    concat      = require('gulp-concat'),
+    uglify      = require('gulp-uglifyjs');
 
 gulp.task('sass', function(){ 
     return gulp.src('app/sass/**/*.scss') 
@@ -28,6 +30,14 @@ gulp.task('browser-sync', function() {
         },
         notify: false 
     });
+});
+
+gulp.task('scripts', function() {
+    return gulp.src('app/js/carousel.js')
+        .pipe(concat('index.js'))
+        .pipe(uglify())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('app/js'));
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'sass'], function() {

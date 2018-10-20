@@ -36,7 +36,8 @@ input[type="radio"].visually-hidden {
   padding: 33px; }
 
 .wrapper {
-  width: 1320px;
+  min-width: 954px;
+  max-width: 1320px;
   min-height: 624px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -45,6 +46,28 @@ input[type="radio"].visually-hidden {
   background-color: black;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+
+.carousel {
+  width: 954px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.carousel__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
 
 .info {
   display: -webkit-box;
@@ -55,6 +78,10 @@ input[type="radio"].visually-hidden {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   width: 954px;
   padding-top: 40px;
   margin: 0 auto;
@@ -427,6 +454,30 @@ input[type="radio"].visually-hidden {
   width: 10px;
   height: 8px;
   background-position: 32px -5px; }
+
+.slide-2 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  width: 954px;
+  background-color: #565c6b; }
+
+.slide-3 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  width: 954px;
+  background-color: #3f444f; }
+
+.slide-4 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  width: 954px;
+  background-color: #292b32; }
 
 .slider-paginator {
   -webkit-box-sizing: border-box;
