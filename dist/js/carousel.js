@@ -6,7 +6,7 @@ var paginator = document.querySelector(".slider-paginator");
 var prev = paginator.querySelector(".slider-paginator__button-prev");
 var next = paginator.querySelector(".slider-paginator__button-next");
 var sliderButtons = paginator.querySelector(".slider-paginator__buttons");
-var buttonsList  = [sliderButtons.children];
+var buttonsList  = [...sliderButtons.children];
 var current = 0;
 
 var firstButton = sliderButtons.querySelector(".first-slide");
