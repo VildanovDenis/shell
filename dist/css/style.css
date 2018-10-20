@@ -461,7 +461,7 @@ input[type="radio"].visually-hidden {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   width: 954px;
-  background-color: #565c6b; }
+  background-color: rgba(86, 92, 107, 0.7); }
 
 .slide-3 {
   -webkit-box-flex: 0;
@@ -469,7 +469,7 @@ input[type="radio"].visually-hidden {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   width: 954px;
-  background-color: #3f444f; }
+  background-color: rgba(63, 68, 79, 0.7); }
 
 .slide-4 {
   -webkit-box-flex: 0;
@@ -477,7 +477,7 @@ input[type="radio"].visually-hidden {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   width: 954px;
-  background-color: #292b32; }
+  background-color: rgba(41, 43, 50, 0.7); }
 
 .slider-paginator {
   -webkit-box-sizing: border-box;

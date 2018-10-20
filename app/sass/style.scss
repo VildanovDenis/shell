@@ -479,19 +479,19 @@ input[type="radio"].visually-hidden {
   flex: 0 0 100%;
 
   width: 954px;
-  background-color: darken($gray, 10%);
+  background-color: rgba(darken($gray, 10%), 0.7);
 }
 .slide-3 {
   flex: 0 0 100%;
 
   width: 954px;
-  background-color: darken($gray, 20%);
+  background-color: rgba(darken($gray, 20%), 0.7);
 }
 .slide-4 {
   flex: 0 0 100%;
 
   width: 954px;
-  background-color: darken($gray, 30%);
+  background-color: rgba(darken($gray, 30%), 0.7);
   
 }
 .slider-paginator {
