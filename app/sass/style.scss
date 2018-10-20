@@ -53,7 +53,8 @@ input[type="radio"].visually-hidden {
   padding: 33px;
 }
 .wrapper {
-  width: 1320px;
+  min-width: 954px;
+  max-width: 1320px;
   min-height: 624px;
   
   border-radius: 3px;
@@ -63,9 +64,23 @@ input[type="radio"].visually-hidden {
 
   box-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
+.carousel {
+  width: 954px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+.carousel__wrapper {
+  display: flex;
+  flex-direction: row;
+  will-change: transform;
+
+  transition: transform 0.5s;
+}
 .info {
   display: flex;
   justify-content: space-between;
+  flex: 0 0 100%;
 
   width: 954px;
   padding-top: 40px;
@@ -459,6 +474,25 @@ input[type="radio"].visually-hidden {
   height: 8px;
 
   background-position: 32px -5px;
+}
+.slide-2 {
+  flex: 0 0 100%;
+
+  width: 954px;
+  background-color: darken($gray, 10%);
+}
+.slide-3 {
+  flex: 0 0 100%;
+
+  width: 954px;
+  background-color: darken($gray, 20%);
+}
+.slide-4 {
+  flex: 0 0 100%;
+
+  width: 954px;
+  background-color: darken($gray, 30%);
+  
 }
 .slider-paginator {
   box-sizing: border-box;
